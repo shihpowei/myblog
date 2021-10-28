@@ -7,7 +7,7 @@
 }
 
 header {
-  background: #111;
+  background: #280E3B;
 }
 
 header nav {
@@ -23,14 +23,15 @@ header nav {
 }
 
 header nav div.logo {
-  -webkit-box-flex: 6;
-      -ms-flex: 6 1 500px;
-          flex: 6 1 500px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
   margin: 1rem;
 }
 
-header nav div.logo img {
+header nav div.logo a img {
   width: 10vw;
+  border-radius: 50%;
 }
 
 header nav ul {
@@ -43,9 +44,9 @@ header nav ul {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-box-flex: 2;
-      -ms-flex: 2 1 600px;
-          flex: 2 1 600px;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 1 500px;
+          flex: 4 1 500px;
 }
 
 header nav ul li {
@@ -58,7 +59,7 @@ header nav ul li a {
 }
 
 a.active {
-  color: yellowgreen;
+  color: #A13E97;
 }
 
 section.banner {
@@ -66,7 +67,8 @@ section.banner {
   width: 100%;
   height: 90vh;
   background-color: #aaa;
-  background: linear-gradient(100deg, #90cd4b 50%, transparent 50%) center center/100% 100%;
+  background: linear-gradient(100deg, #632A7E 50%, transparent 50%) center center/100% 100%, url("../picture/sunrise-phu-quoc-island-ocean.jpg") right center/auto 100%;
+  background-repeat: no-repeat;
 }
 
 section.banner div.container {
@@ -117,28 +119,8 @@ section.banner div.container div.txt p {
   margin-top: 2rem;
 }
 
-section.banner div.container div.picture {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-section.banner div.container div.picture img {
-  width: 30vw;
-}
-
-section.banner div.container div.picture div.orangeRect {
-  position: absolute;
-  background-color: #90cd4b;
-  width: 30vw;
-  height: 87vh;
-  left: 1000px;
-  top: 20px;
-  z-index: -1;
-}
-
 footer {
-  background: #111;
+  background: #280E3B;
   height: auto;
   width: 100%;
   color: #fff;
@@ -194,7 +176,7 @@ footer ul.socials li {
 
 footer ul.socials li a {
   text-decoration: none;
-  color: #fff;
+  color: white;
 }
 
 footer ul.socials li a i {
@@ -204,13 +186,12 @@ footer ul.socials li a i {
 }
 
 footer ul.socials li a i:hover {
-  color: #65CD88;
+  color: #A13E97;
 }
 
 footer div.footer-bottom {
-  background: #000;
+  background: #280E3B;
   width: 100%;
-  padding: 20px 0;
   text-align: center;
 }
 
@@ -220,7 +201,7 @@ footer div.footer-bottom p {
   text-transform: capitalize;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
   header nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -232,13 +213,22 @@ footer div.footer-bottom p {
         -ms-flex: 1 1 100px;
             flex: 1 1 100px;
   }
-  header nav div.logo img {
+  header nav div.logo a img {
     width: 15vw;
   }
   header nav ul {
     -webkit-box-flex: 9;
         -ms-flex: 9 1 400px;
             flex: 9 1 400px;
+  }
+  section.banner div.container div.txt h1 {
+    font-size: 3rem;
+  }
+  section.banner div.container div.txt small {
+    font-size: 1.3rem;
+  }
+  section.banner div.container div.txt p {
+    font-size: 2rem;
   }
 }
 
@@ -276,6 +266,15 @@ footer div.footer-bottom p {
   }
   header nav ul li a {
     font-size: 1.25rem;
+  }
+  section.banner div.container div.txt h1 {
+    font-size: 3rem;
+  }
+  section.banner div.container div.txt small {
+    font-size: 1.3rem;
+  }
+  section.banner div.container div.txt p {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

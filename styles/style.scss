@@ -7,19 +7,22 @@
 
 
 header{
-    background: #111;
+    background: #280E3B;
     nav{
         flex-wrap: wrap;
         display: flex;
         height: 13vh;
         align-items: center;
         div.logo{
-            flex: 6 1 500px;
+            flex: 1 1 200px;
             margin: 1rem;
-           
+           a{
+               
             img{
                 width: 10vw;
+                border-radius: 50%;
                 
+            }
             }
         }
 
@@ -28,7 +31,7 @@ header{
             display: flex;
             align-items: center;
            justify-content:space-around;
-           flex: 2 1 600px;
+           flex: 4 1 500px;
            
             li{
                 list-style-type: none;
@@ -44,15 +47,18 @@ header{
     }
 }
 a.active{
-                   color: yellowgreen;
+                   color: #A13E97;
                     } 
 section.banner{
     position: relative;
     width: 100%;
     height: 90vh;
     background-color: #aaa;
-    background: linear-gradient(100deg, #90cd4b 50%, transparent 50%) center center /100% 100%
+    background: linear-gradient(100deg, #632A7E 50%, transparent 50%) center center /100% 100%,
+    url("../picture/sunrise-phu-quoc-island-ocean.jpg") right center / auto 100%
     ;
+    background-repeat:no-repeat;
+    
     div.container{
         height: 100vh;
         display: flex;
@@ -84,27 +90,12 @@ section.banner{
                 margin-top: 2rem;
             }
         }
-        div.picture{
-           flex-grow: 1;
-                img{    
-                    width: 30vw;
-            }
-            div.orangeRect{
-                position: absolute;
-                background-color: #90cd4b;
-                width: 30vw;
-                height: 87vh;
-                left: 1000px;
-                top: 20px;
-                z-index: -1;
-            }
-            
-        }
+       
     }
 }
 
 footer{
-     background: #111;
+     background: #280E3B;
         height: auto;
         width: 100%;
         color: #fff;
@@ -139,13 +130,13 @@ footer{
             
             a{
                 text-decoration: none;
-                color: #fff;
+                color: white;
                
                i{
                 font-size: 25px;
                 transition: all 0.3s ease;
                 &:hover{
-                    color: #65CD88;
+                    color: #A13E97;
                 }
                }
                
@@ -154,9 +145,9 @@ footer{
         }
     }
     div.footer-bottom{
-        background: #000;
+        background: #280E3B;
         width: 100%;
-        padding: 20px 0;
+        
         text-align: center;
         p{
             font-size: 1rem;
@@ -170,15 +161,17 @@ footer{
     
    
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:850px) {
     header{
         nav{
             display: flex;
             width: 100%;
                 div.logo{
                     flex:1 1 100px;
+                    a{
                    img{
                     width: 15vw;
+                }
                 }
             }
             ul{
@@ -188,6 +181,24 @@ footer{
         
     }
   }
+
+  section.banner{
+      div.container{
+          
+          div.txt{
+              h1{
+                  font-size: 3rem;
+              }
+              small{
+                  font-size: 1.3rem;
+                  }
+              p{
+                  font-size: 2rem;
+                  }
+          }
+      }
+  }
+
 }
 
 @media screen and(max-width:650px) {
@@ -218,4 +229,22 @@ footer{
             }
         }
     }
+
+     section.banner{
+      
+      div.container{
+          
+          div.txt{
+              h1{
+                  font-size: 3rem;
+              }
+              small{
+                  font-size: 1.3rem;
+                  }
+              p{
+                  font-size: 2rem;
+                  }
+          }
+      }
+  }
 }
